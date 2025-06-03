@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ai-tool-directory-api
+    env: node
+    buildCommand: npm run build
+    startCommand: node index.js
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://<user>:<pass>@cluster.ai.mongodb.net/ai-tools
+      - key: JWT_SECRET
+        value: your-secret-key

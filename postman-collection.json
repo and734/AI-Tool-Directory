@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "AI Tool Directory API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Tools",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:5000/api/tools"
+      }
+    },
+    {
+      "name": "Submit Tool",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:5000/api/tools",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": "{ \"name\":\"Test Tool\", \"description\":\"Test\", \"url\":\"https://example.com\",  \"category\":\"Testing\" }"
+      }
+    }
+  ]
+}
